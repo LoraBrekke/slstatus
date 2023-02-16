@@ -65,11 +65,5 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, "VOL: %s", "amixer -c 1 sget Master | grep -i '%' | cut -d '[' -f 2 | cut -d ']' -f 1", NULL },
-    {separator, " | ", NULL},
-    { cpu_perc, "CPU: %s%%", NULL },
-    {separator, " | ", NULL},
-    { ram_perc, "RAM: %s%%", NULL },
-    {separator, " | ", NULL},
 	{ datetime, "%s", "%a. %d. %b. %Y  %H.%M.%S" },
 };
